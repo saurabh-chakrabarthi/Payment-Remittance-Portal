@@ -1,4 +1,4 @@
-# Booking portal exercise
+# Booking portal
 
 The "Booking portal" is an application with the purpose of
 creating payment bookings. It consists on a payment form with the following structure:
