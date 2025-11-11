@@ -1,0 +1,78 @@
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>PeerTransfer Booking Process</title>
+    <meta content='width=device-width' name='viewport' />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css' />
+    <link href='/css/style.css' rel='stylesheet' />
+  </head>
+  <body>
+    <header class='clearfix'>
+      <div class='width'>
+        <h1 class='left'>
+          <a href='/'>PeerTransfer Booking Process</a>
+        </h1>
+      </div>
+    </header>
+    <div class='clearfix width_50' id='main' role='main'>
+      <form action="/payment" method="post">
+        <h2> Payment Information </h3>
+        <label class="width_20 left block" for="school"> Your School </label>
+        <select  name="school">
+          <option value="MIT">MIT</option>
+          <option value="Stanford">Stanford</option>
+          <option value="Arizona">Arizona</option>
+        </select>
+        <br/>
+
+        <label class="width_20 left block" for="amount"> Tuition amount </label>
+        <input type="number" name="amount">
+        <label for="currency_from"> Currency </label>
+        <select  name="currency_from">
+          <option value="eur">Euro</option>
+          <option value="usd">USD</option>
+          <option value="cad">CAD</option>
+        </select>
+        <br/>
+        <br/>
+        <br/>
+
+        <h2> Sender Information </h3>
+        <label class="width_20 left block" for="student_id"> Student ID </label>
+        <input type="text" name="student_id">
+        <br/>
+
+        <label class="width_20 left block" for="sender_full_name"> Your name </label>
+        <input type="text" name="sender_full_name">
+        <br/>
+
+        <label class="width_20 left block" for="email"> Email </label>
+        <input type="text" name="email">
+        <br/>
+
+        <label class="width_20 left block" for="country_from"> Country </label>
+        <select  name="country_from">
+          <option value="Spain">Spain</option>
+          <option value="China">China</option>
+          <option value="India">India</option>
+        </select>
+        <br/>
+
+        <label class="width_20 left block" for="sender_address"> Address </label>
+        <input type="text" name="sender_address">
+        <br/>
+        <br/>
+        <br/>
+
+        <input type="submit" value="Book a Payment">
+      </form>
+    </div>
+
+    <footer class='clearfix'>
+      <div class='width'>
+        Peertransfer Booking Process
+      </div>
+    </footer>
+  </body>
+</html>
+

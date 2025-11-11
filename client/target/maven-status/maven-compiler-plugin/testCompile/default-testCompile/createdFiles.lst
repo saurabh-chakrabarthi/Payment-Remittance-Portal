@@ -1,0 +1,4 @@
+com/payment/client/integration/PaymentServiceIntegrationTest.class
+com/payment/client/service/PaymentValidationServiceTest.class
+com/payment/client/service/EmailValidationServiceTest.class
+com/payment/client/service/DashboardServiceTest.class

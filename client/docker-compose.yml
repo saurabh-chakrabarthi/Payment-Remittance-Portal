@@ -1,0 +1,23 @@
+
+services:
+  payment-client:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - API_BASE_URL=http://booking-portal:9292
+    depends_on:
+      - booking-portal
+    networks:
+      - payment-network
+
+  booking-portal:
+    build: ../server
+    ports:
+      - "9292:9292"
+    networks:
+      - payment-network
+
+networks:
+  payment-network:
+    driver: bridge
