@@ -1,0 +1,12 @@
+*.sw[a-z]
+*.sqlite3
+*.DS_Store
+*.class
+/build/
+/bin/
+/out/
+target/
+/client/build/
+/client/target/*
+.idea/
+.vscode/

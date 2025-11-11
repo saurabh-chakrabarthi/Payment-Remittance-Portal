@@ -10,11 +10,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class PaymentValidationService {
-    private final EmailValidationService emailValidationService;
-    
-    public PaymentValidationService(EmailValidationService emailValidationService) {
-        this.emailValidationService = emailValidationService;
-    }
     
     public ValidationResult validateDuplicatePayment(BookingDTO payment, List<Payment> existingPayments) {
         List<BookingDTO> existingBookingDTOs = existingPayments.stream()
