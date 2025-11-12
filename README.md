@@ -31,8 +31,6 @@ As a final step, we add to the amount some fees depending on the magnitude of th
 * if the amount > 1000 USD AND < 10000 USD: 3% fees
 * if the amount > 10000 USD: 2% fees
 
-Note : Closing this pull request as I have opened a new PR : https://github.com/flywire-homework/dev_saurabh_chakrabarthi/pull/2 which contains all the changes
-
 ## Overview
 
 This code implements a Spring Boot client application that integrates with the existing booking portal to provide comprehensive payment quality checks, validation, and fee calculations as specified in the requirements.
